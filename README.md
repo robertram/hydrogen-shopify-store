@@ -14,6 +14,9 @@ Hydrogen is a React framework and SDK that you can use to build fast and dynamic
 # Home Page
 ![Home Page](https://user-images.githubusercontent.com/37461123/141447367-fdfc29c6-4de1-4781-9354-0de8899c1f0d.png)
 
+## Custom sections
+
+
 
 ## Building for production
 
@@ -26,6 +29,4 @@ Then, you can run a local `server.js` using the production build with:
 ```bash
 yarn serve
 ```
-#� �h�y�d�r�o�g�e�n�-�s�h�o�p�i�f�y�-�s�t�o�r�e�
-�
-�
+
