@@ -12,14 +12,20 @@ Hydrogen is a React framework and SDK that you can use to build fast and dynamic
 - Yarn
 
 # Home Page
-![Home Page](https://user-images.githubusercontent.com/37461123/141447367-fdfc29c6-4de1-4781-9354-0de8899c1f0d.png)
 
+![HomePage](https://user-images.githubusercontent.com/37461123/141576938-0b1c2300-8f56-4956-9938-077442eda29d.png)
 ## Custom sections
 ### Hero
 ![Hero](https://user-images.githubusercontent.com/37461123/141447898-14ca4630-b932-4a56-86de-1a77fc9cb47b.PNG)
 ### Categories
 ![Category](https://user-images.githubusercontent.com/37461123/141447815-7ee4b107-d9a8-4d68-8cee-a5ecf2722299.PNG)
 
+# Collections
+
+## Best Sells
+![BestSellsCollection](https://user-images.githubusercontent.com/37461123/141576500-de358bdc-8bd5-486c-9991-7090851d5960.png)
+# Home Collection
+![HomeCollection](https://user-images.githubusercontent.com/37461123/141576686-3061dd52-25bf-4a8e-a4d3-11cabad20296.png)
 
 ## Building for production
 
