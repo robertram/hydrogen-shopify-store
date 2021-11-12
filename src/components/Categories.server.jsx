@@ -17,26 +17,20 @@ export default function Categories({}) {
         <h1 className="font-extrabold mb-4 text-5xl md:text-7xl">
           Shop By Category
         </h1>
-        <h2 className="font-semibold mb-4 text-5xl md:text-4xl">
-          Watch our star product
-        </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
         {data.collections.edges.map((item, index) => {
           return (
             <Link
-              className="border-2 rounded-md p-6 border-gray-200"
+              className="border-2 rounded-md p-6 border-gray-200 transition-all duration-500 ease-in-out transform bg-center bg-cover object-center object-contain hover:scale-110 bg-white"
               to={`collections/${item.node.handle}`}
               key={index}
             >
               <h3 className="font-bold mb-4 text-5xl md:text-4xl">
                 {item.node.title}
               </h3>
-              <img
-                className="bg-white w-full transition-all duration-500 ease-in-out transform bg-center bg-cover object-center object-contain hover:scale-110 "
-                src={item.node.image.url}
-              />
+              <img className="bg-white w-full" src={item.node.image.url} />
             </Link>
           );
         })}
