@@ -4,6 +4,7 @@ import {
   useShopQuery,
   flattenConnection,
   RawHtml,
+  Image,
 } from '@shopify/hydrogen';
 import {useParams} from 'react-router-dom';
 import gql from 'graphql-tag';
@@ -12,6 +13,7 @@ import LoadMoreProducts from '../../components/LoadMoreProducts.client';
 import Layout from '../../components/Layout.server';
 import ProductCard from '../../components/ProductCard.server';
 import NotFound from '../../components/NotFound.server';
+import CategoryHero from '../../components/CategoryHero.server';
 
 export default function Collection({
   country = {isoCode: 'US'},
@@ -37,6 +39,7 @@ export default function Collection({
 
   return (
     <Layout>
+      <CategoryHero collection={collection} />
       <h1 className="font-bold text-4xl md:text-5xl text-gray-900 mb-6 mt-6">
         {collection.title}
       </h1>
@@ -77,6 +80,9 @@ const QUERY = gql`
       id
       title
       descriptionHtml
+      image {
+        ...ImageFragment
+      }
 
       products(first: $numProducts) {
         edges {
@@ -94,4 +100,5 @@ const QUERY = gql`
 
   ${MediaFileFragment}
   ${ProductProviderFragment}
+  ${Image.Fragment}
 `;

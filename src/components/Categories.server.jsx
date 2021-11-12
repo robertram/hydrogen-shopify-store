@@ -30,7 +30,11 @@ export default function Categories({}) {
               <h3 className="font-bold mb-4 text-5xl md:text-4xl">
                 {item.node.title}
               </h3>
-              <img className="bg-white w-full" src={item.node.image.url} />
+              <img
+                className="bg-white w-full"
+                src={item.node.image.url}
+                alt={item.node.image.altText}
+              />
             </Link>
           );
         })}
