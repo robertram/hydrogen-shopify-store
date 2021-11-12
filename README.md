@@ -16,7 +16,7 @@ Hydrogen is a React framework and SDK that you can use to build fast and dynamic
 ![HomePage](https://user-images.githubusercontent.com/37461123/141576938-0b1c2300-8f56-4956-9938-077442eda29d.png)
 ## Custom sections
 ### Hero
-![Hero](https://user-images.githubusercontent.com/37461123/141447898-14ca4630-b932-4a56-86de-1a77fc9cb47b.PNG)
+![HeroHydrogenStore](https://user-images.githubusercontent.com/37461123/141580150-74c922f8-503d-4f09-833d-145fd38ca349.PNG)
 ### Categories
 ![Category](https://user-images.githubusercontent.com/37461123/141447815-7ee4b107-d9a8-4d68-8cee-a5ecf2722299.PNG)
 
