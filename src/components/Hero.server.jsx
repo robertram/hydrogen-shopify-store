@@ -25,7 +25,7 @@ export default function Hero({}) {
   const firstProductImage = products;
 
   return (
-    <div className="text-gray-900 pt-16 rounded-[40px] my-16 px-4 xl:px-12 bg-gradient-to-b from-white -mx-4 xl:-mx-12">
+    <div className="text-gray-900 pt-16  px-4 xl:px-12 bg-gradient-to-b from-white -mx-4 xl:-mx-12">
       <div className="text-center mb-16">
         <h1 className="font-extrabold mb-4 text-5xl md:text-7xl">
           Welcome to {shopName}
