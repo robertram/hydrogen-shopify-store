@@ -86,13 +86,13 @@ export default function Home({country = {isoCode: 'US'}}) {
 
   return (
     <Layout>
-      <div className="relative mb-12">
+      <div className="relative">
         <Hero featuredProductsCollection={featuredProductsCollection} />
-        <div className="bg-white p-12   mb-10">
+        <div className="bg-white p-12">
           {featuredProductsCollection ? (
             <>
               <div className="flex justify-between items-center mb-8 text-md font-medium">
-                <span className="text-black uppercase">
+                <span className="text-black  font-bold mb-4 text-3xl md:text-4xl ">
                   {featuredProductsCollection.title}
                 </span>
                 <span className="hidden md:inline-flex">
@@ -119,11 +119,10 @@ export default function Home({country = {isoCode: 'US'}}) {
                   Shop all
                 </Link>
               </div>
-
-              <Categories />
             </>
           ) : null}
         </div>
+        <Categories />
       </div>
     </Layout>
   );

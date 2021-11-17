@@ -4,7 +4,7 @@ import {Link} from '@shopify/hydrogen';
 
 function StorefrontInfo({firstProduct}) {
   return (
-    <div className="opacity-90 bg-white p-12 shadow-xl rounded-xl text-gray-900 transition-all duration-500 ease-in-out transform bg-center bg-cover object-center object-contain hover:scale-110 text-center w-2/5 h-3/4">
+    <div className="opacity-90 bg-white p-6 lg:p-12 shadow-xl rounded-xl text-gray-900 transition-all duration-500 ease-in-out transform bg-center bg-cover object-center object-contain hover:scale-110 text-center w-4/5 lg:w-2/5 h-3/4 ">
       <Link
         to={`/products/${firstProduct.handle}`}
         className="text-md font-bold hover:underline"
