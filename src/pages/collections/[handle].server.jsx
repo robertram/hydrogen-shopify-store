@@ -40,25 +40,27 @@ export default function Collection({
   return (
     <Layout>
       <CategoryHero collection={collection} />
-      <h1 className="font-bold text-4xl md:text-5xl text-gray-900 mb-6 mt-6">
-        {collection.title}
-      </h1>
-      <RawHtml string={collection.descriptionHtml} className="text-2xl" />
-      <p className="text-sm text-gray-500 mt-5 mb-5">
-        {products.length} {products.length > 1 ? 'products' : 'product'}
-      </p>
+      <div className="p-10 md:p-16">
+        <h1 className="font-bold text-4xl md:text-5xl text-gray-900 mb-6 mt-6">
+          {collection.title}
+        </h1>
+        <RawHtml string={collection.descriptionHtml} className="text-2xl" />
+        <p className="text-sm text-gray-500 mt-5 mb-5">
+          {products.length} {products.length > 1 ? 'products' : 'product'}
+        </p>
 
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        {products.map((product) => (
-          <li key={product.id}>
-            <ProductCard product={product} />
-          </li>
-        ))}
-      </ul>
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {products.map((product) => (
+            <li key={product.id}>
+              <ProductCard product={product} />
+            </li>
+          ))}
+        </ul>
 
-      {hasNextPage && (
-        <LoadMoreProducts startingCount={collectionProductCount} />
-      )}
+        {hasNextPage && (
+          <LoadMoreProducts startingCount={collectionProductCount} />
+        )}
+      </div>
     </Layout>
   );
 }

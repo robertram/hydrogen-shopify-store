@@ -88,7 +88,7 @@ export default function Home({country = {isoCode: 'US'}}) {
     <Layout>
       <div className="relative mb-12">
         <Hero featuredProductsCollection={featuredProductsCollection} />
-        <div className="bg-white p-12 shadow-xl rounded-xl mb-10">
+        <div className="bg-white p-12   mb-10">
           {featuredProductsCollection ? (
             <>
               <div className="flex justify-between items-center mb-8 text-md font-medium">

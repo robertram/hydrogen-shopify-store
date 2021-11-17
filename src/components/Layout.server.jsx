@@ -51,7 +51,7 @@ export default function Layout({children, hero}) {
         </div>
         <main role="main" id="mainContent" className="relative bg-gray-50">
           {hero}
-          <div className="mx-auto w-full md:px-8">{children}</div>
+          <div className="mx-auto w-full ">{children}</div>
         </main>
         <Footer collection={collections[0]} product={products[0]} />
       </div>

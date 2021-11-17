@@ -111,7 +111,7 @@ export default function ProductDetails({product}) {
     <>
       <Seo product={product} />
       <Product product={product} initialVariantId={initialVariant.id}>
-        <div className="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-x-8 my-16">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr,1fr] gap-x-8 p-10 md:p-16">
           <div className="md:hidden mt-5 mb-8">
             <Product.Title
               as="h1"

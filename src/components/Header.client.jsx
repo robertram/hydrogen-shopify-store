@@ -32,7 +32,7 @@ export default function Header({collections, storeName}) {
                   className="font-bold uppercase text-2xl tracking-widest text-green-900"
                   to="/"
                 >
-                  <img src="logo.svg" alt={storeName} />
+                  <img src="/logo.svg" alt={storeName} />
                 </Link>
               </div>
               <Navigation collections={collections} storeName={storeName} />
