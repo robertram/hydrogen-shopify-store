@@ -49,7 +49,7 @@ export default function Layout({children, hero}) {
           />
           <Cart />
         </div>
-        <main role="main" id="mainContent" className="relative bg-gray-50">
+        <main role="main" id="mainContent" className="relative">
           {hero}
           <div className="mx-auto w-full ">{children}</div>
         </main>

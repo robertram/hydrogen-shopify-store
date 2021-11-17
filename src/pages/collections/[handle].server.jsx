@@ -39,7 +39,7 @@ export default function Collection({
 
   return (
     <Layout>
-      <CategoryHero collection={collection} />
+      {/*<CategoryHero collection={collection} />*/}
       <div className="p-10 md:p-16">
         <h1 className="font-bold text-4xl md:text-5xl text-gray-900 mb-6 mt-6">
           {collection.title}
@@ -50,6 +50,11 @@ export default function Collection({
         </p>
 
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <img
+            src={collection.image.url}
+            alt={collection.image.altText}
+            className="w-full h-full object-cover bg-center hidden lg:block"
+          />
           {products.map((product) => (
             <li key={product.id}>
               <ProductCard product={product} />
