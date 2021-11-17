@@ -1,5 +1,7 @@
 # Hydrogen Shopify Store Demo
 
+**Demo Link**: [https://hydrogen-shopify-store.herokuapp.com](https://hydrogen-shopify-store.herokuapp.com/) 
+
 ## Getting started
 
 **Requirements:**
