@@ -12,9 +12,9 @@ export default function Categories({}) {
   const imageUrl = firstProduct.images.edges[0].node.transformedSrc;
 
   return (
-    <div className="text-gray-900 pt-16 rounded-[40px] my-16 px-4 xl:px-12 bg-gradient-to-b from-white -mx-4 xl:-mx-12">
+    <div className="text-gray-900 p-16 pt-16  -mx-4 xl:-mx-12 bg-black h-auto ">
       <div className="text-center mb-16">
-        <h1 className="font-extrabold mb-4 text-5xl md:text-7xl">
+        <h1 className="font-extrabold mb-4 text-5xl md:text-7xl text-white">
           Shop By Category
         </h1>
       </div>
@@ -23,11 +23,11 @@ export default function Categories({}) {
         {data.collections.edges.map((item, index) => {
           return (
             <Link
-              className="border-2 rounded-md p-6 border-gray-200 transition-all duration-500 ease-in-out transform bg-center bg-cover object-center object-contain hover:scale-110 bg-white"
+              className="transition-all duration-500 ease-in-out transform bg-center bg-cover object-center object-contain hover:scale-110 relative text-center"
               to={`collections/${item.node.handle}`}
               key={index}
             >
-              <h3 className="font-bold mb-4 text-5xl md:text-4xl">
+              <h3 className="font-bold mb-4 text-5xl md:text-4xl absolute inset-1/3 text-white">
                 {item.node.title}
               </h3>
               <img

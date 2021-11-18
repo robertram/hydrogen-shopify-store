@@ -25,6 +25,15 @@ module.exports = {
           },
         },
       }),
+      backgroundImage: {
+        'hero-background': "url('/computer.jpg')",
+        'hero-background2': "url('/computer2.jpg')",
+      },
+      colors: {
+        mine: {
+          DEFAULT: '#252424',
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],

@@ -11,9 +11,9 @@ export default function ProductCard({product}) {
   }
 
   return (
-    <div className="text-md mb-4 relative">
+    <div className="text-md mb-4 mx-6 relative">
       <Link to={`/products/${product.handle}`}>
-        <div className="rounded-lg border-2 border-gray-200 mb-2 relative flex items-center justify-center overflow-hidden object-cover h-96">
+        <div className="mb-2 relative flex items-center justify-center overflow-hidden object-cover h-96">
           {selectedVariant.image ? (
             <Image
               className="bg-white absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover object-center object-contain hover:scale-110"
@@ -27,19 +27,25 @@ export default function ProductCard({product}) {
           )}
         </div>
 
-        <span className="text-black font-semibold mb-0.5">{product.title}</span>
+        <div className="flex justify-between">
+          <div className="">
+            <span className="text-black font-semibold mb-0.5">
+              {product.title}
+            </span>
 
-        {product.vendor && (
-          <p className="text-gray-900 font-medium text-sm mb-0.5">
-            {product.vendor}
-          </p>
-        )}
+            {product.vendor && (
+              <p className="text-gray-900 font-medium text-sm mb-0.5">
+                {product.vendor}
+              </p>
+            )}
+          </div>
 
-        <div className="flex ">
-          {selectedVariant.compareAtPriceV2 && (
-            <MoneyCompareAtPrice money={selectedVariant.compareAtPriceV2} />
-          )}
-          <MoneyPrice money={selectedVariant.priceV2} />
+          <div className="flex ">
+            {selectedVariant.compareAtPriceV2 && (
+              <MoneyCompareAtPrice money={selectedVariant.compareAtPriceV2} />
+            )}
+            <MoneyPrice money={selectedVariant.priceV2} />
+          </div>
         </div>
       </Link>
     </div>
